@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine();
+            
             Console.WriteLine($"\nPlease enter a name you would like to see the reverse order of and to see " +
                 $"whether or not it is a palindrome:");
             StringReverse(Convert.ToString(Console.ReadLine()));
