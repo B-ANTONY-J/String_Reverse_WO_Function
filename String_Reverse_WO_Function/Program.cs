@@ -25,7 +25,7 @@
             }
             else
             {
-                Console.WriteLine($"\nIt's not a Palindrome\n");
+                Console.WriteLine($"\nThis is not a Palindrome\n");
             }
             Console.WriteLine(reverse);
 
