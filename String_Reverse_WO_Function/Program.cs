@@ -4,30 +4,40 @@
     {
         static void Main(string[] args)
         {
-            
+
             Console.WriteLine($"\nPlease enter a name you would like to see the reverse order of and to see " +
                 $"whether or not it is a palindrome:");
             string stringInput = Convert.ToString(Console.ReadLine()).ToLower();
 
-            char[] stringArray = stringInput.ToCharArray();
+            string justAString = stringInput;
 
-            string reverse = String.Empty;
+            //string reverse = String.Empty;
+            string forward = "";
+
+           // string reverseWord = forward.Reverse().ToString();
+            //string stringArray = stringInput.Reverse().ToString();
 
 
-            for (int i = stringArray.Length - 1; i >= 0; i--)
+            for (int i = justAString.Length - 1; i >= 0; i--)
+            // forward loop for (int i = 0; i >= justAString.Length - 1; i++)
+            //for (int i = 0; i >= justAString.Length -1; i--)
             {
-                reverse += stringArray[i];
+                //reverse += stringArray[i];
+                Console.WriteLine(forward += justAString[i]);
+
             }
-
-            if (stringInput == reverse)
+            if (forward == stringInput)
             {
+                Console.WriteLine(forward);
                 Console.WriteLine($"\nThis is a Palindrome\n");
             }
             else
             {
                 Console.WriteLine($"\nThis is not a Palindrome\n");
             }
-            Console.WriteLine(reverse);
+            Console.WriteLine(forward);
+            
+
 
         }
 
