@@ -9,21 +9,12 @@
                 $"whether or not it is a palindrome:");
             string stringInput = Convert.ToString(Console.ReadLine()).ToLower();
 
-            string justAString = stringInput;
-
-            //string reverse = String.Empty;
+           
             string forward = "";
 
-           // string reverseWord = forward.Reverse().ToString();
-            //string stringArray = stringInput.Reverse().ToString();
-
-
-            for (int i = justAString.Length - 1; i >= 0; i--)
-            // forward loop for (int i = 0; i >= justAString.Length - 1; i++)
-            //for (int i = 0; i >= justAString.Length -1; i--)
+            for (int i = stringInput.Length - 1; i >= 0; i--)
             {
-                //reverse += stringArray[i];
-                Console.WriteLine(forward += justAString[i]);
+                Console.WriteLine(forward += stringInput[i]);
 
             }
             if (forward == stringInput)
@@ -36,7 +27,7 @@
                 Console.WriteLine($"\nThis is not a Palindrome\n");
             }
             Console.WriteLine(forward);
-            
+
 
 
         }
