@@ -19,13 +19,13 @@
             }
             if (forward == stringInput)
             {
-                Console.WriteLine($"\nThis is a Palindrome\n");
+                Console.WriteLine($"\n{forward} is a Palindrome\n");
             }
             else
             {
-                Console.WriteLine($"\nThis is not a Palindrome\n");
+                Console.WriteLine($"\n{forward} is not a Palindrome\n");
             }
-            Console.WriteLine(forward);
+            
 
 
 
