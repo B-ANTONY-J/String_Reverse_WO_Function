@@ -9,17 +9,16 @@
                 $"whether or not it is a palindrome:");
             string stringInput = Convert.ToString(Console.ReadLine()).ToLower();
 
-           
+
             string forward = "";
 
             for (int i = stringInput.Length - 1; i >= 0; i--)
             {
-                Console.WriteLine(forward += stringInput[i]);
+                forward += stringInput[i];
 
             }
             if (forward == stringInput)
             {
-                Console.WriteLine(forward);
                 Console.WriteLine($"\nThis is a Palindrome\n");
             }
             else
