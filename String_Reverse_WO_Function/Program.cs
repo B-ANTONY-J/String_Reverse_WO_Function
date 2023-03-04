@@ -11,33 +11,32 @@
             string stringInputForward = Convert.ToString(Console.ReadLine()).ToLower();
             Console.WriteLine("\n");
 
-            string outerLoop = string.Empty;
-            string innerLoop = string.Empty;
+            string forwardLoop = string.Empty;
+            string reverseLoop = string.Empty;
 
             for (int j = 0; j < stringInputForward.Length; j++)
-
             {
-                Console.WriteLine(outerLoop += stringInputForward[j]);
+                Console.WriteLine(forwardLoop += stringInputForward[j]);
 
             }
-            Console.WriteLine($"\nThe Forward Loop(Outer loop) string results are above.\n");
+            Console.WriteLine($"\nThe Forward Loop string results are above.\n");
+
+            for (int k = stringInputForward.Length - 1; k >= 0; k--)
             {
+                Console.WriteLine(reverseLoop += stringInputForward[k]);
 
-                for (int k = stringInputForward.Length - 1; k >= 0; k--)
-                {
-                    Console.WriteLine(innerLoop += stringInputForward[k]);
-
-                }
-                Console.WriteLine($"\nThe Reverse Loop(Inner Loop) string results are above\n");
-                if (outerLoop == innerLoop)
-                {
-                    Console.WriteLine($"\nFinally this compares the forward string of {outerLoop} and the reverse string of {innerLoop} which makes the result a palinDrome!");
-                }
-                else
-                {
-                    Console.WriteLine($"\nThis reverse string of {innerLoop} is not a Palindrome of the forward string {outerLoop}");
-                }
             }
+            Console.WriteLine($"\nThe Reverse Loop string results are above\n");
+
+            if (forwardLoop == reverseLoop)
+            {
+                Console.WriteLine($"\nFinally this forward string result of {forwardLoop} and the reverse string results of {reverseLoop} are equal which makes the result a palinDrome!");
+            }
+            else
+            {
+                Console.WriteLine($"\nThis reverse string results of {reverseLoop} is not a Palindrome of the forward string result of {forwardLoop}");
+            }
+
 
         }
 
