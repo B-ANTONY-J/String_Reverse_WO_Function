@@ -13,8 +13,8 @@
 
             for (int j = 0; j < stringInputForward.Length; j++)
             {
-                //
-                Console.WriteLine(reverseLoop += stringInputForward[stringInputForward.Length -j - 1]);
+                
+                reverseLoop += stringInputForward[stringInputForward.Length -j - 1];
 
             }
             Console.WriteLine($"\nThe reverse string of the input string is: ");
