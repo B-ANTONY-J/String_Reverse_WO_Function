@@ -8,7 +8,7 @@
             Console.WriteLine($"\nPlease enter a name you would like to see the reverse order of and to see " +
                 $"whether or not it is a palindrome: ");
 
-            string stringInputForward = Convert.ToString(Console.ReadLine()).ToLower();
+            string stringInputForward = Console.ReadLine().ToLower();
             string reverseLoop = string.Empty;
 
             for (int j = 0; j < stringInputForward.Length; j++)
