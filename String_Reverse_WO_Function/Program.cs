@@ -9,32 +9,25 @@
                 $"whether or not it is a palindrome: ");
 
             string stringInputForward = Convert.ToString(Console.ReadLine()).ToLower();
-            Console.WriteLine("\n");
-
-            string forwardLoop = string.Empty;
             string reverseLoop = string.Empty;
 
             for (int j = 0; j < stringInputForward.Length; j++)
             {
-                Console.WriteLine(forwardLoop += stringInputForward[j]);
+                //
+                Console.WriteLine(reverseLoop += stringInputForward[stringInputForward.Length - 1]);
 
             }
-            Console.WriteLine($"\nThe Forward Loop string results are above.\n");
+            Console.WriteLine($"\nThe reverse string of the input string is: ");
+            Console.WriteLine($"{reverseLoop}");
 
-            for (int k = stringInputForward.Length - 1; k >= 0; k--)
+            Console.WriteLine("\n");
+            if (reverseLoop == stringInputForward)
             {
-                Console.WriteLine(reverseLoop += stringInputForward[k]);
-
-            }
-            Console.WriteLine($"\nThe Reverse Loop string results are above\n");
-
-            if (forwardLoop == reverseLoop)
-            {
-                Console.WriteLine($"\nFinally this forward string result of {forwardLoop} and the reverse string results of {reverseLoop} are equal which makes the result a palinDrome!");
+                Console.WriteLine($"\nFinally this reverse string result of {reverseLoop} matches the string input of {stringInputForward} which makes the result a palinDrome!\n");
             }
             else
             {
-                Console.WriteLine($"\nThis reverse string results of {reverseLoop} is not a Palindrome of the forward string result of {forwardLoop}");
+                Console.WriteLine($"\nThis reverse string results of {reverseLoop} is not a Palindrome of the input string {stringInputForward}\n");
             }
 
 
