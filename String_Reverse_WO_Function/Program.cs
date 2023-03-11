@@ -34,9 +34,7 @@
                 Console.WriteLine($"\nThis reverse string results of {reverseLoop} is not a Palindrome of the input string {stringInputForward}\n");
             }*/
 
-            if (UIMethods.StringLoop() == true) 
-            {
-            }
+            
         }
 
     }
