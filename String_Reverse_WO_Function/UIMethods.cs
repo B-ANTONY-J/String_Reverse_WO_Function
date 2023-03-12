@@ -15,7 +15,7 @@ namespace String_Reverse_WO_Function
                 $"whether or not it is a palindrome: ");
         }
 
-        public static void StringLoop()
+        public static void StringInputLoop()
         {
             string stringInputForward = Console.ReadLine().ToLower();
             string reverseLoop = string.Empty;

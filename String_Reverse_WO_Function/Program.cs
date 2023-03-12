@@ -13,7 +13,7 @@
             string stringInputForward = Console.ReadLine().ToLower();
             string reverseLoop = string.Empty;
             */
-            UIMethods.StringLoop();
+            UIMethods.StringInputLoop();
             /*
             for (int j = 0; j < stringInputForward.Length; j++)
             {
